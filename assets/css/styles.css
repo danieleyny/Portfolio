@@ -3,7 +3,7 @@
 
 /*===== VARIABLES CSS =====*/
 :root{
-    --header-height: 3rem;
+    --header-height: 4rem;
     --font-medium: 500;
 }
 
@@ -178,15 +178,13 @@ img{
   }
   
    .logo-image{
-      width: 156px;
-      height: 156px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      margin-top: 20px;
-      z-index: 16;
   }
   
   
-  .con{
+  .nav__logo-icon{
     font-size: 10px;
     color: var(--first-color);
   }
@@ -554,11 +552,13 @@ img{
    
    .home__title{
     align-self: flex-end;
-    font-size: 50px;
+    font-size: 45px;
     color: var(--white-color);
     line-height: 1;
-    margin-top: -30px;
+    margin-top: 30px;
+    margin-left: 20px;
     }
+    
 }
 
 
@@ -619,7 +619,7 @@ img{
         font-size: 85px;
         color: var(--white-color);
         line-height: 1;
-        margin-top: -60px;
+        margin-top: -30px;
         }
         .home__social{
             top: 30%;
