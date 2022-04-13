@@ -181,13 +181,12 @@ img{
       width: 156px;
       height: 156px;
       border-radius: 50%;
-      overflow: hidden;
       margin-top: 20px;
       z-index: 16;
   }
   
   
-  .nav__logo-icon{
+  .con{
     font-size: 10px;
     color: var(--first-color);
   }
@@ -483,8 +482,8 @@ img{
 /* For small devices */
 @media screen and (max-width: 375px) {
     .home__img{
-        width: 100%;
-        height: 90%;
+        width: 500px;
+        height: 100%;
         right: 17%;
     }
 }
