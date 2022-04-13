@@ -247,10 +247,11 @@ img{
 .home__social{
     position: absolute;
     top: 26rem;
-    right: -1rem;
+    right: -.09rem;
     display: grid;
     justify-items: center;
     row-gap: 3.5rem;
+    z-index: 11;
   }
   
   .home__social-follow{
@@ -322,13 +323,35 @@ img{
     margin-bottom: var(--mb-4);
 }
 .about__social-icon{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin: 0 var(--mb-1);
 }
 .about__social-icon:hover{
     color: var(--first-color);
 }
 
+.about__button{
+    background-color: var(--first-color);
+    height: 45px;
+    width: 180px;
+    margin-top: 10px;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+}
+.about__button:hover{
+    border: 1px solid var(--first-color);
+    background-color: #FAFAFF;
+}
+
+
+.primary-btn {
+    color: #FAFAFF;
+    font-size: 20px;
+}
+.primary-btn:hover{
+    color: var(--first-color);
+    font-weight: 600;
+}
 /* ===== SKILLS =====*/
 .skills__container{
     row-gap: 2rem;
@@ -470,21 +493,22 @@ img{
 
 @media screen and (max-width: 763px) {
     .section-title {
-        font-size: 26px;
+        font-size: 30px;
     }
     .section-title::after{
         position: absolute;
         content: "";
-        width: 65px;
+        width: 85px;
         height: .1rem;
         left: 0;
         right: 0;
         margin: auto;
-        top: 2.5rem;
+        top: 2.9rem;
         background-color: var(--first-color);
     }
     .about__img {
-        margin-bottom: 62px;
+        height: 140px;
+        width: 140px;
     }
    .home__scroll {
        z-index:  10;
@@ -644,7 +668,7 @@ img{
 
 @media screen and (min-width: 1200px){
     .home__social{
-      right: -3rem;
+      right: 2rem;
       row-gap: 4.5rem;
     }
     .home__social-follow{
