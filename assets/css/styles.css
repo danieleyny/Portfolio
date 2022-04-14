@@ -495,10 +495,10 @@ img{
 		flex-direction: column;
 	}
 	#projects .item .right .buttons a {
-        width: 140px;
+        width: 180px;
         padding: 10px;
         text-align: center;
-        font-size: 15px;
+        font-size: 16px;
     }
     #projects .item .right .project-title {
         font-size: 1.6rem;
