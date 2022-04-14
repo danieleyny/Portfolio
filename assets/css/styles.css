@@ -376,6 +376,225 @@ img{
     border-radius: .5rem;
 }
 
+
+
+
+
+/* Projects Section */
+#projects {
+	padding: 10rem 0;
+}
+#projects .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 2000px;
+	margin: 0 auto;
+	margin-bottom: 15rem;
+	/* gap: 2rem; */
+}
+#projects .item:nth-of-type(even) {
+	flex-direction: row-reverse;
+}
+#projects .item .left {
+	flex: 1;
+}
+#projects .item .right {
+	margin-left: -150px;
+	flex: 1;
+	background-color: #FAFAFF;
+	padding: 5rem 3rem;
+	border-radius: 12px;
+	box-shadow: 0px 0px 20px #00000028;
+	z-index: 2;
+}
+#projects .item:nth-of-type(even) .right {
+	margin-left: 0;
+}
+#projects .item:nth-of-type(even) .left {
+	margin-left: -150px;
+}
+#projects .item .left .img-projects {
+	height: 400px;
+	overflow: hidden;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px #4705fc33;
+	position: relative;
+}
+#projects .item .left .img-projects::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #5a24ed38;
+}
+#projects .item .left .img-projects img {
+	object-fit: cover;
+	transition: 0.3s ease transform;
+}
+#projects .item:hover .left .img-projects img {
+	transform: scale(1.1);
+	z-index: 1;
+}
+#projects .item .right .project-title {
+	font-size: 2.5rem;
+	font-family: 'Montserrat';
+	margin-bottom: 1rem;
+}
+#projects .item .right .project-sub-title {
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+}
+#projects .item .right .project-desc {
+	color: gray;
+	margin-bottom: 3rem;
+}
+#projects .item .right .external-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: calc(0.6em - 4px) calc(1.6em - 4px);
+}
+#projects .item .right .external-link svg {
+	width: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+	#projects .item {
+		flex-direction: column;
+	}
+	#projects .item .left {
+		width: 100%;
+	}
+	#projects .item .right {
+		margin-left: 0;
+		width: 90%;
+		margin-top: -150px;
+	}
+	#projects .item:nth-of-type(even) {
+		flex-direction: column;
+	}
+	#projects .item:nth-of-type(even) .left {
+		margin-left: 0;
+    }
+    #projects .item .left .img-projects {
+        height: 350px;
+        overflow: hidden;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px #4705fc33;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 450px) {
+	#projects .item .right .buttons {
+		flex-direction: column;
+	}
+	#projects .item .right .buttons a {
+        width: 140px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+    #projects .item .right .project-title {
+        font-size: 1.6rem;
+        font-family: 'Montserrat';
+        margin-bottom: 1rem;
+        margin-top: -50px;
+    }
+    #projects .item .right .project-sub-title {
+        font-size: .8rem;
+        margin-bottom: 2rem;
+    }
+   
+}
+
+
+
+
+.container-projects {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+
+
+.section-heading {
+	font-size: clamp(2rem, 10vw, 8rem);
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	letter-spacing: 0.2rem;
+	text-align: center;
+	position: relative;
+	margin-bottom: 10rem;
+}
+.section-heading::before {
+	content: attr(data-outline);
+	position: absolute;
+	left: 2%;
+	top: -20%;
+	width: 100%;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	letter-spacing: 0.2rem;
+
+	color: transparent;
+	/* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
+	-webkit-text-stroke: 1.5px #5a24ed2f;
+	z-index: -1;
+}
+.buttons {
+	margin-top: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 2rem;
+}
+.primary-btn-projects {
+	display: inline-block;
+	background-color: var(--first-color);
+	color: white;
+	font-size: 1.1rem;
+	padding: .6em 1.6em;
+	border-radius: 50px;
+}
+.primary-btn-projects:hover {
+	display: inline-block;
+    border: .1px solid var(--first-color);
+    color: var(--first-color);
+    background-color: transparent;
+
+}
+.buttons .primary-btn-projects.outline {
+	background-color: transparent;
+	border: 2px solid var(--first-color);
+	color: var(--first-color);
+}
+.buttons .primary-btn-projects.outline:hover {
+	background-color: var(--first-color);
+	color: #FAFAFF;
+}
+.buttons svg {
+	width: 50px;
+	color: var(--first-color);
+}
+.buttons .primary-btn-projects.outline:hover svg {
+	width: 50px;
+	color: #FAFAFF;
+}
+
+
+
+
+
+
 /* ===== PORTFOLIO =====*/
 .portfolio{
     background-color: var(--white-color);
