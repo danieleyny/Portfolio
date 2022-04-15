@@ -394,7 +394,7 @@ img{
 	justify-content: center;
 	max-width: 2000px;
 	margin: 0 auto;
-	margin-bottom: 15rem;
+	margin-bottom: 10rem;
 	/* gap: 2rem; */
 }
 #projects .item:nth-of-type(even) {
