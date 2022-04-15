@@ -632,7 +632,7 @@ img{
     bottom: 0;
 }
 .portfolio__link-name{
-    color: var(--dark-color);
+    color: #FAFAFF;
 }
 
 /* ===== CONTACT =====*/
