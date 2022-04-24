@@ -156,6 +156,8 @@ img{
 .nav__link{
     position: relative;
     color: var(--dark-color);
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 .nav__link:hover{
     color: var(--first-color);
@@ -167,7 +169,7 @@ img{
 }
 .nav__toggle{
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
@@ -241,7 +243,7 @@ img{
 .home__img{
     position: absolute;
     right: 5rem;
-    bottom: 0;
+    bottom: -2.5rem;
     width: 100%;
 }
 
@@ -598,6 +600,84 @@ img{
 
 
 
+/* Services Section */
+#services {
+    padding: 15rem 0;
+    margin-top: -450px;
+}
+
+#services .all-items {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+#services .item {
+	padding: 1.5rem;
+	transition: 0.3s ease-in-out background-color;
+	border-radius: 12px;
+	flex: 1;
+}
+#services .item:nth-child(1):hover {
+	background-color: #4705fc33;
+}
+#services .item:nth-child(2):hover {
+	background-color: rgba(183, 181, 183, 0.475);
+}
+#services .item:nth-child(3):hover {
+	background-color: #4705fc33;
+}
+#services .item .icon {
+	width: 50px;
+	height: 50px;
+	padding: 0.8rem;
+	background-color: rgba(255, 0, 0, 0.24);
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+#services .item-heading {
+	font-weight: 500;
+	font-size: 2rem;
+	/* text-transform: uppercase; */
+	margin-bottom: 1.5rem;
+	font-family: 'Poppins';
+}
+#services .item-desc {
+	color: var(--secondary-gray);
+}
+#services .item:nth-child(1) .icon {
+	background-color: rgba(163, 218, 244, 0.776);
+}
+#services .item:nth-child(2) .icon {
+	background-color: rgba(151, 207, 232, 0.742);
+}
+#services .item:nth-child(3) .icon {
+	background-color: rgba(116, 187, 220, 0.818);
+}
+@media only screen and (max-width: 768px) {
+	#services .all-items {
+		flex-direction: column;
+		text-align: center;
+	}
+	#services .item .icon {
+		margin: 0 auto;
+		margin-bottom: 1rem;
+	}
+	#services .item {
+		margin: 2rem 0;
+	}
+	#services .item:nth-child(1) {
+		background-color: #4705fc33;
+	}
+	#services .item:nth-child(2) {
+		background-color: rgba(183, 181, 183, 0.475);
+	}
+	#services .item:nth-child(3) {
+		background-color: #4705fc33;
+	}
+}
+
+
+
 
 /* ===== PORTFOLIO =====*/
 .portfolio{
@@ -631,13 +711,16 @@ img{
 .portfolio__img:hover .portfolio__link{
     bottom: 0;
 }
-.portfolio__link-name{
-    color: #FAFAFF;
-}
+
 
 /* ===== CONTACT =====*/
+.contact section {
+    margin-top: -400px;
+}
+
 .contact__container{
     row-gap: 2rem;
+    
 }
 .contact__subtitle{
     font-size: var(--normal-font-size);
@@ -707,6 +790,8 @@ img{
         width: 500px;
         height: 100%;
         right: 17%;
+        bottom: 1rem;
+
     }
 }
   
