@@ -30,6 +30,9 @@
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
     }
+    .nav__toggle{
+        display: none;
+    }
 }
 
 /*===== Margenes =====*/
@@ -246,6 +249,7 @@ img{
     bottom: -2.5rem;
     width: 100%;
 }
+
 
 
 /* == Socials Section ==*/
@@ -673,7 +677,8 @@ img{
 	}
 	#services .item:nth-child(3) {
 		background-color: #4705fc33;
-	}
+    }
+    
 }
 
 
@@ -894,16 +899,12 @@ img{
     .nav{
         height: calc(var(--header-height) + 1rem);
     }
-    .nav__list{
-        display: flex;
-    }
+    
     .nav__item{
         margin-left: var(--mb-4);
         margin-bottom: 0;
     }
-    .nav__toggle{
-        display: none;
-    }
+    
     .nav__link{
         color: var(--white-color);
     }
@@ -989,10 +990,41 @@ img{
       font-size: 1.15rem;
     }
   }
+  
+  @media screen and (min-width: 768px){
+      .nav__list{
+          display: flex;
+      }
+  }
 
-
-
-
+  
+  @media screen and (max-width: 767px){
+    .nav__link{
+        position: relative;
+        color: var(--dark-color);
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+    .nav__link:hover{
+        color: var(--first-color);
+        font-weight: 900;
+    }
+    .active::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.18rem;
+        left: 0;
+        top: 2rem;
+        background-color: var(--first-color);
+    }
+    .home__img{
+        max-width: 100%; 
+        height: auto;
+    }
+  }
+  
+  
 @media screen and (min-width: 1024px){
     .bd-grid{
         margin-left: auto;
@@ -1008,5 +1040,6 @@ img{
     .home__img {
         width: 500px;
         right: 24%;
+        bottom: -84px;
     }
 }
